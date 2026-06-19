@@ -350,6 +350,10 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .book-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .promo-banner {
     flex-direction: column;
     align-items: flex-start;
@@ -403,15 +407,59 @@
     height: 286px;
   }
 
+  .hero__art-label {
+    display: none;
+  }
+
   .genre-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .book-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
   .book-card__cover {
-    min-height: 300px;
+    min-height: 260px;
   }
 
   .promo-banner {
     padding: 28px 20px;
+  }
+}
+
+@media (max-width: 520px) {
+  .hero__art-stack {
+    height: 292px;
+  }
+
+  .hero__art-card--back-left {
+    left: 10px;
+    top: 34px;
+    width: 112px;
+    height: 220px;
+  }
+
+  .hero__art-card--back-right {
+    right: 10px;
+    top: 22px;
+    width: 116px;
+    height: 232px;
+  }
+
+  .hero__art-card--front {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 160px;
+    height: 268px;
+  }
+
+  .hero__art-title {
+    font-size: 1.2rem;
+  }
+
+  .hero__art-label {
+    display: none;
   }
 }

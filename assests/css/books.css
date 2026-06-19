@@ -58,6 +58,11 @@
     align-items: flex-start;
   }
 
+  .books-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
   .books-sort {
     width: 100%;
     justify-content: space-between;
@@ -65,5 +70,15 @@
 
   .books-sort select {
     width: 100%;
+  }
+}
+
+@media (max-width: 520px) {
+  .books-grid .book-card__cover {
+    min-height: 240px;
+  }
+
+  .books-grid .book-card__summary {
+    min-height: 0;
   }
 }
