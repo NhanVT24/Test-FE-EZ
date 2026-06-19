@@ -33,8 +33,8 @@ README.md
 
 ## Cách chạy
 
-1. Mở thư mục `page`
-2. Chạy file `home.html`
+1. Mở file `index.html` ở thư mục gốc
+2. Trang sẽ tự chuyển đến trang chủ của project
 3. Có thể dùng Live Server trong VS Code để xem dễ hơn
 
 ## Ghi chú
