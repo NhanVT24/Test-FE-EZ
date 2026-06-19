@@ -28,6 +28,7 @@ assests/
   js/
 component/
 page/
+index.html
 README.md
 ```
 
@@ -37,7 +38,3 @@ README.md
 2. Trang sẽ tự chuyển đến trang chủ của project
 3. Có thể dùng Live Server trong VS Code để xem dễ hơn
 
-## Ghi chú
-
-- Đây là bài làm phục vụ mục đích ứng tuyển thực tập
-- Giao diện và chức năng được xây dựng ở mức cơ bản, tập trung vào việc hoàn thành đúng yêu cầu
