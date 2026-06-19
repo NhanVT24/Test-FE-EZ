@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pages & Co. - Bag</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assests/css/site.css" />
+  <link rel="stylesheet" href="../assests/css/component/header.css" />
+  <link rel="stylesheet" href="../assests/css/component/footer.css" />
+  <link rel="stylesheet" href="../assests/css/bag.css" />
+  <script src="../assests/js/site.js" defer></script>
+  <script src="../assests/js/bag.js" defer></script>
+</head>
+<body>
+  <div id="header-component"></div>
+  <div id="book-card-component" hidden></div>
+
+  <main class="page-shell page-shell--compact bag-page">
+    <nav class="detail-breadcrumbs" aria-label="Breadcrumb">
+      <a href="../page/home.html">Home</a>
+      <span>/</span>
+      <span>Bag</span>
+    </nav>
+
+    <section class="bag-heading">
+      <h1 class="page-title">Your bag</h1>
+      <p class="page-subtitle">A clean, roomy cart with room for the next good read.</p>
+    </section>
+
+    <section class="bag-layout">
+      <div class="bag-items panel" id="bag-items"></div>
+
+      <aside class="bag-summary panel">
+        <h2>Order summary</h2>
+        <div class="bag-summary__row">
+          <span>Subtotal <small>(2 items)</small></span>
+          <strong>$36.00</strong>
+        </div>
+        <div class="bag-summary__row">
+          <span>Shipping</span>
+          <strong>Free</strong>
+        </div>
+        <hr />
+        <div class="bag-summary__row bag-summary__total">
+          <span>Total</span>
+          <strong>$36.00</strong>
+        </div>
+        <a class="btn-solid bag-summary__checkout" href="#">Checkout</a>
+        <p class="bag-summary__note">You’ll be asked to sign in to complete your order.</p>
+      </aside>
+    </section>
+  </main>
+
+  <div id="footer-component"></div>
+</body>
+</html>

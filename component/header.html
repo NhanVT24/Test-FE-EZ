@@ -1,0 +1,107 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <div class="site-header__left">
+      <a class="brand" href="../page/home.html" aria-label="Pages & Co. home">
+        <span class="brand__mark">P</span>
+        <span class="brand__text">Pages & Co.</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary">
+        <a class="site-nav__link is-active" data-nav="home" href="../page/home.html">Home</a>
+        <a class="site-nav__link" data-nav="shop" href="../page/books.html">Shop</a>
+      </nav>
+    </div>
+
+    <div class="site-actions">
+      <label class="site-search" aria-label="Search books">
+        <span class="site-search__icon"><i class="fa fa-search"></i></span>
+        <input type="search" placeholder="Search titles, authors..." />
+      </label>
+
+      <button class="btn btn--ghost" type="button" data-open-signin>Sign in</button>
+      <a class="btn btn--dark bag-pill" href="../page/bag.html">
+        Bag <span class="bag-count">0</span>
+      </a>
+    </div>
+
+    <button class="site-menu-toggle" type="button" aria-expanded="false" aria-controls="site-mobile-menu" data-mobile-menu-toggle>
+      <span class="sr-only">Open menu</span>
+      <span class="site-menu-toggle__icon" aria-hidden="true"></span>
+    </button>
+  </div>
+
+  <div class="site-mobile-menu" id="site-mobile-menu" hidden>
+    <nav class="site-mobile-nav" aria-label="Mobile primary">
+      <a class="site-mobile-nav__link" data-nav="home" href="../page/home.html">Home</a>
+      <a class="site-mobile-nav__link" data-nav="shop" href="../page/books.html">Shop</a>
+      <a class="site-mobile-nav__link" data-nav="genres" href="../page/home.html#genres">Genres</a>
+      <a class="site-mobile-nav__link" data-nav="new" href="../page/home.html#new-arrivals">New arrivals</a>
+      <a class="site-mobile-nav__link" data-nav="about" href="../page/home.html#featured-section">About</a>
+    </nav>
+
+    <div class="site-mobile-actions">
+      <button class="btn btn--ghost" type="button" data-open-signin>Sign in</button>
+      <a class="btn btn--dark bag-pill" href="../page/bag.html">Bag <span class="bag-count">0</span></a>
+    </div>
+  </div>
+</header>
+
+<div class="modal" id="signin-modal" aria-hidden="true">
+  <div class="modal__backdrop" data-close-signin></div>
+  <section class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="signin-title" aria-describedby="signin-description">
+    <button class="modal__close" type="button" aria-label="Close dialog" data-close-signin>&times;</button>
+    <span class="modal__brand">P</span>
+    <div class="modal__panels">
+      <section class="modal__panel is-active" data-auth-panel="signin">
+        <h2 class="modal__title" id="signin-title">Welcome back</h2>
+        <p class="modal__text" id="signin-description">Sign in to access your bag, orders and wishlist.</p>
+
+        <form>
+          <div class="modal__field">
+            <label for="signin-email">Email</label>
+            <input id="signin-email" type="email" placeholder="you@example.com" />
+          </div>
+
+          <div class="modal__field">
+            <label for="signin-password">Password</label>
+            <input id="signin-password" type="password" placeholder="password" />
+          </div>
+
+          <div class="modal__actions">
+            <button class="btn-solid" type="submit">Sign in</button>
+            <p class="modal__fineprint">New here? <a href="#" data-switch-auth="signup">Create an account</a></p>
+          </div>
+        </form>
+      </section>
+
+      <section class="modal__panel" data-auth-panel="signup" hidden>
+        <h2 class="modal__title" id="signup-title">Create account</h2>
+        <p class="modal__text" id="signup-description">Join Pages & Co. to track orders, save favorites and shop faster.</p>
+
+        <form>
+          <div class="modal__field">
+            <label for="signup-name">Name</label>
+            <input id="signup-name" type="text" placeholder="Your name" />
+          </div>
+
+          <div class="modal__field">
+            <label for="signup-email">Email</label>
+            <input id="signup-email" type="email" placeholder="you@example.com" />
+          </div>
+
+          <div class="modal__field">
+            <label for="signup-password">Password</label>
+            <input id="signup-password" type="password" placeholder="Create a password" />
+          </div>
+
+          <div class="modal__actions">
+            <button class="btn-solid" type="submit">Create account</button>
+            <p class="modal__fineprint">Already have an account? <a href="#" data-switch-auth="signin">Sign in</a></p>
+          </div>
+        </form>
+      </section>
+    </div>
+  </section>
+</div>

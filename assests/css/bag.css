@@ -1,0 +1,162 @@
+.bag-page {
+  display: grid;
+  gap: 18px;
+}
+
+.bag-heading {
+  display: grid;
+  gap: 4px;
+}
+
+.bag-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 28px;
+  align-items: start;
+}
+
+.bag-items {
+  padding: 14px;
+  display: grid;
+  gap: 14px;
+}
+
+.bag-item {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr) auto;
+  gap: 16px;
+  padding: 14px;
+  border-radius: 12px;
+  background: rgba(255, 250, 240, 0.92);
+  border: 1px solid rgba(228, 212, 180, 0.9);
+}
+
+.bag-item__cover {
+  width: 92px;
+  height: 132px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(24, 18, 13, 0.16);
+}
+
+.bag-item__cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bag-item__title {
+  margin: 0;
+  font-size: 1.08rem;
+}
+
+.bag-item__author {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-style: italic;
+}
+
+.bag-item__actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.bag-qty {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: #fffaf2;
+}
+
+.bag-qty button {
+  border: 0;
+  background: transparent;
+  font-size: 1.2rem;
+  color: var(--text);
+}
+
+.bag-item__price {
+  align-self: start;
+  font-weight: 800;
+  color: var(--brand);
+}
+
+.bag-summary {
+  padding: 18px;
+  position: sticky;
+  top: 92px;
+}
+
+.bag-summary h2 {
+  margin: 0 0 14px;
+}
+
+.bag-summary__row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+.bag-summary__row span {
+  color: #4f463d;
+}
+
+.bag-summary__row small {
+  color: var(--muted);
+}
+
+.bag-summary hr {
+  border: 0;
+  border-top: 1px solid rgba(228, 212, 180, 0.9);
+  margin: 16px 0;
+}
+
+.bag-summary__total strong {
+  color: var(--brand);
+  font-size: 1.35rem;
+}
+
+.bag-summary__checkout {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.bag-summary__note {
+  margin: 12px 0 0;
+  text-align: center;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 1100px) {
+  .bag-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .bag-summary {
+    position: static;
+  }
+}
+
+@media (max-width: 760px) {
+  .bag-item {
+    grid-template-columns: 1fr;
+  }
+
+  .bag-item__cover {
+    width: 100%;
+    height: 210px;
+  }
+
+  .bag-item__price {
+    justify-self: start;
+  }
+}

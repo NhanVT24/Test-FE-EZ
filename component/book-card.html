@@ -1,0 +1,29 @@
+<template id="book-card-template">
+  <article class="book-card">
+    <a class="book-card__link" data-role="link" href="../page/booksDetail.html" aria-label="Open book"></a>
+    <div class="book-card__cover" data-role="cover">
+      <span class="book-card__badge" data-role="badge"></span>
+      <div class="book-card__cover-copy">
+        <p class="book-card__cover-title" data-role="cover-title"></p>
+        <p class="book-card__cover-author" data-role="cover-author"></p>
+      </div>
+    </div>
+
+    <div class="book-card__body">
+      <h3 class="book-card__title" data-role="title"></h3>
+      <p class="book-card__author" data-role="author"></p>
+      <p class="book-card__summary" data-role="summary"></p>
+
+      <div class="book-card__meta">
+        <div class="book-card__pricing">
+          <span class="book-card__price" data-role="price"></span>
+          <span class="book-card__old-price" data-role="old-price"></span>
+        </div>
+        <div class="book-card__rating" aria-label="Rating">
+          <span class="book-card__star">&#9733;</span>
+          <span data-role="rating"></span>
+        </div>
+      </div>
+    </div>
+  </article>
+</template>

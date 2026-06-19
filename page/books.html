@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pages & Co. - Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assests/css/site.css" />
+  <link rel="stylesheet" href="../assests/css/component/header.css" />
+  <link rel="stylesheet" href="../assests/css/component/footer.css" />
+  <link rel="stylesheet" href="../assests/css/books.css" />
+  <script src="../assests/js/site.js" defer></script>
+  <script src="../assests/js/books.js" defer></script>
+</head>
+<body>
+  <div id="header-component"></div>
+  <div id="book-card-component" hidden></div>
+
+  <main class="page-shell page-shell--compact books-page">
+    <section class="books-hero">
+      <p class="eyebrow">Browse the shelves</p>
+      <h1 class="page-title">Shop</h1>
+      <p class="page-subtitle" id="books-count">14 titles in the shop</p>
+    </section>
+
+    <section class="books-toolbar panel">
+      <div class="chip-row" id="category-chips"></div>
+      <label class="books-sort">
+        <span>Sort by</span>
+        <select id="books-sort">
+          <option value="featured">Featured</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+          <option value="rating-desc">Rating</option>
+          <option value="newest">Newest</option>
+        </select>
+      </label>
+    </section>
+
+    <section class="books-grid-wrap">
+      <div class="book-grid books-grid" id="books-grid"></div>
+    </section>
+
+    <nav class="pagination" id="books-pagination" aria-label="Pagination"></nav>
+  </main>
+
+  <div id="footer-component"></div>
+</body>
+</html>

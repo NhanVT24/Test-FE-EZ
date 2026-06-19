@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pages & Co. - Book Detail</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assests/css/site.css" />
+  <link rel="stylesheet" href="../assests/css/component/header.css" />
+  <link rel="stylesheet" href="../assests/css/component/footer.css" />
+  <link rel="stylesheet" href="../assests/css/detail.css" />
+  <script src="../assests/js/site.js" defer></script>
+  <script src="../assests/js/detail.js" defer></script>
+</head>
+<body>
+  <div id="header-component"></div>
+  <div id="book-card-component" hidden></div>
+
+  <main class="page-shell page-shell--compact detail-page">
+    <div class="detail-topbar">
+      <nav class="detail-breadcrumbs" aria-label="Breadcrumb">
+        <a href="../page/home.html">Home</a>
+        <span>/</span>
+        <a href="../page/books.html">Books</a>
+        <span>/</span>
+        <span id="detail-breadcrumb-title">The Lighthouse Keeper</span>
+      </nav>
+
+      <a class="detail-back" href="../page/books.html" aria-label="Go back to shop">
+        <span aria-hidden="true">←</span>
+        Back
+      </a>
+    </div>
+
+    <section class="detail-hero panel">
+      <div class="detail-cover cover--green" id="detail-cover">
+        <div class="detail-cover__label">
+          <p id="detail-cover-title">The Lighthouse Keeper</p>
+          <span id="detail-cover-author">Mara Ellison</span>
+        </div>
+      </div>
+
+      <div class="detail-copy">
+        <p class="detail-category" id="detail-category">Fiction</p>
+        <h1 class="page-title" id="detail-title">The Lighthouse Keeper</h1>
+        <p class="detail-author" id="detail-author">by Mara Ellison</p>
+
+        <div class="detail-meta">
+          <span id="detail-rating">4.6</span>
+          <span id="detail-pages">312 pages</span>
+          <span id="detail-year">2023</span>
+        </div>
+
+        <div class="detail-price-row">
+          <strong id="detail-price">$18.00</strong>
+          <span id="detail-old-price">$24.00</span>
+        </div>
+
+        <p class="detail-summary" id="detail-summary">
+          A widowed keeper and a runaway girl share a winter on a remote island, learning what it means to keep a light burning for someone else.
+        </p>
+
+        <div class="detail-actions">
+          <a class="btn-solid" href="../page/bag.html">Add to bag</a>
+          <button class="btn-outline" type="button">Wishlist</button>
+        </div>
+
+        <dl class="detail-specs">
+          <div>
+            <dt>Format</dt>
+            <dd id="detail-format">Paperback</dd>
+          </div>
+          <div>
+            <dt>Pages</dt>
+            <dd id="detail-pages-full">312</dd>
+          </div>
+          <div>
+            <dt>Published</dt>
+            <dd id="detail-published">2023</dd>
+          </div>
+          <div>
+            <dt>Publisher</dt>
+            <dd id="detail-publisher">Harbor & Vale</dd>
+          </div>
+          <div>
+            <dt>Language</dt>
+            <dd>English</dd>
+          </div>
+          <div>
+            <dt>ISBN</dt>
+            <dd id="detail-isbn">978-1-23456-001-2</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section detail-related">
+      <div class="section__heading">
+        <div>
+          <p class="section__eyebrow">You may also like</p>
+          <h2 class="section__title">More staff picks</h2>
+        </div>
+      </div>
+      <div class="book-grid detail-grid" id="detail-related-grid"></div>
+    </section>
+  </main>
+
+  <div id="footer-component"></div>
+</body>
+</html>

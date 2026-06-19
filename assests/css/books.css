@@ -1,0 +1,69 @@
+.books-page {
+  display: grid;
+  gap: 18px;
+}
+
+.books-hero {
+  display: grid;
+  gap: 4px;
+  padding: 4px 0 8px;
+}
+
+.books-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 16px 18px;
+}
+
+.books-sort {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--muted);
+  font-size: 0.92rem;
+  white-space: nowrap;
+}
+
+.books-sort select {
+  min-width: 128px;
+  min-height: 38px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: #fffaf2;
+  padding: 0 12px;
+}
+
+.books-grid-wrap {
+  border-top: 1px solid rgba(228, 212, 180, 0.8);
+  padding-top: 24px;
+}
+
+.books-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.books-grid .book-card__cover {
+  min-height: 320px;
+}
+
+.books-grid .book-card__summary {
+  min-height: 4.2em;
+}
+
+@media (max-width: 760px) {
+  .books-toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .books-sort {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .books-sort select {
+    width: 100%;
+  }
+}

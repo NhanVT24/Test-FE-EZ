@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pages & Co. - Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assests/css/site.css" />
+  <link rel="stylesheet" href="../assests/css/component/header.css" />
+  <link rel="stylesheet" href="../assests/css/component/footer.css" />
+  <link rel="stylesheet" href="../assests/css/home.css" />
+  <script src="../assests/js/site.js" defer></script>
+  <script src="../assests/js/home.js" defer></script>
+</head>
+<body class="page-home">
+  <div id="header-component"></div>
+  <div id="book-card-component" hidden></div>
+
+  <main class="home-page">
+    <section class="hero">
+      <button class="hero__nav hero__nav--prev" type="button" aria-label="Previous slide">&lsaquo;</button>
+      <div class="hero__content">
+        <p class="eyebrow hero__eyebrow" id="hero-eyebrow">Staff favourites</p>
+        <h1 class="hero__title" id="hero-title">The shelves we keep coming back to</h1>
+        <p class="hero__text" id="hero-text">
+          Our booksellers pick the titles they can't stop pressing into customers' hands.
+        </p>
+        <a class="hero__cta" id="hero-cta" href="../page/books.html">Browse bestsellers</a>
+        <div class="hero__dots" id="hero-dots" aria-hidden="true"></div>
+      </div>
+      <div class="hero__art" aria-hidden="true">
+        <div class="hero__art-stack">
+          <div class="hero__art-card hero__art-card--back-left">
+            <img id="hero-art-left" alt="" />
+          </div>
+          <div class="hero__art-card hero__art-card--back-right">
+            <img id="hero-art-right" alt="" />
+          </div>
+          <div class="hero__art-card hero__art-card--front">
+            <img id="hero-art-front" alt="" />
+            <div class="hero__art-label">
+              <p class="hero__art-title" id="hero-art-title">The Lighthouse Keeper</p>
+              <p class="hero__art-author" id="hero-art-author">Mara Ellison</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="hero__nav hero__nav--next" type="button" aria-label="Next slide">&rsaquo;</button>
+    </section>
+
+    <section class="genre-section" id="genres" aria-label="Browse by genre">
+      <p class="eyebrow">Find your shelf</p>
+      <h2 class="section__title">Browse by genre</h2>
+      <div class="genre-grid">
+        <a href="../page/books.html?category=Fiction" class="genre-card genre-card--fiction">
+          <strong>Fiction</strong>
+          <span>3 titles</span>
+        </a>
+        <a href="../page/books.html?category=Mystery" class="genre-card genre-card--mystery">
+          <strong>Mystery</strong>
+          <span>2 titles</span>
+        </a>
+        <a href="../page/books.html?category=Sci-Fi" class="genre-card genre-card--sci-fi">
+          <strong>Sci-Fi</strong>
+          <span>2 titles</span>
+        </a>
+        <a href="../page/books.html?category=Poetry" class="genre-card genre-card--poetry">
+          <strong>Poetry</strong>
+          <span>2 titles</span>
+        </a>
+        <a href="../page/books.html?category=Children" class="genre-card genre-card--children">
+          <strong>Children</strong>
+          <span>2 titles</span>
+        </a>
+        <a href="../page/books.html?category=Non-fiction" class="genre-card genre-card--nonfiction">
+          <strong>Non-fiction</strong>
+          <span>2 titles</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section" id="featured-section">
+      <div class="section__heading">
+        <div>
+          <p class="section__eyebrow">Editor's picks</p>
+          <h2 class="section__title">Featured this month</h2>
+        </div>
+        <a class="section__link" href="../page/books.html">View all &rarr;</a>
+      </div>
+      <div class="book-grid" id="featured-grid"></div>
+    </section>
+
+    <section class="promo-banner">
+      <div class="promo-banner__content">
+        <p class="promo-banner__eyebrow">The reading room</p>
+        <h2 class="promo-banner__title">Free shipping on every order over $35</h2>
+        <p class="promo-banner__text">
+          Plus 15% off your first month and a weekly recommendation picked just for you.
+        </p>
+      </div>
+      <a class="promo-banner__cta" href="../page/books.html">Join free</a>
+    </section>
+
+    <section class="section" id="new-arrivals">
+      <div class="section__heading">
+        <div>
+          <p class="section__eyebrow">Most loved</p>
+          <h2 class="section__title">Bestsellers</h2>
+        </div>
+        <a class="section__link" href="../page/books.html">View all &rarr;</a>
+      </div>
+      <div class="book-grid" id="bestsellers-grid"></div>
+    </section>
+
+    <section class="section">
+      <div class="section__heading">
+        <div>
+          <p class="section__eyebrow">Hot off the press</p>
+          <h2 class="section__title">New arrivals</h2>
+        </div>
+        <a class="section__link" href="../page/books.html">View all &rarr;</a>
+      </div>
+      <div class="book-grid" id="new-arrivals-grid"></div>
+    </section>
+  </main>
+
+  <div id="footer-component"></div>
+</body>
+</html>
